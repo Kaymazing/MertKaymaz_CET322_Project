@@ -19,5 +19,7 @@ namespace MertKaymaz_CET322_BOOKIE.Data
         {
             
         }
+
+        public DbSet<MertKaymaz_CET322_BOOKIE.Models.User> User { get; set; }
     }
 }

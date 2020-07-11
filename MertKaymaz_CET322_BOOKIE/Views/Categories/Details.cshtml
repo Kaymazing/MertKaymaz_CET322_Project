@@ -1,0 +1,24 @@
+﻿@model MertKaymaz_CET322_BOOKIE.Models.Category
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>@Model.Name</h4>
+    <hr />
+    <dl class="row">
+        @foreach (var book in Model.Books)
+        {
+            <dt class="col-sm-2">
+                <h4>@book.Title</h4>
+                <h5>@book.Authors</h5>
+                <div>Minimum Price: @book.MinPrice</div>
+            </dt>
+        }
+
+
+    </dl>
+</div>

@@ -1,0 +1,19 @@
+﻿@model IEnumerable<MertKaymaz_CET322_BOOKIE.Models.Category>
+
+
+
+
+
+
+
+
+
+
+<a href="index.html">Home</a>
+<ul class="sub_menu">
+    @foreach (var item in Model)
+    {
+        <li><a asp-area="" asp-controller="Categories" asp-action="Details" asp-route-id="@item.Id">@item.Name</a></li>
+    }
+
+</ul>
